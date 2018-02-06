@@ -6,6 +6,6 @@ function Mostar()
 {
 	var dato;
 	dato = prompt ("");
-	getElementById = dato;
+	getElementById ("dato").value = dato;
 }
 
