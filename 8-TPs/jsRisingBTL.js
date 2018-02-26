@@ -9,5 +9,51 @@ F.	Nacionalidad, “A” para argentinos, “E” para extranjeros, “N” para
  */
 function ComenzarIngreso () 
 {
+ var edad;
+ var sexo;
+ var estado;
+ var Sueldo;
+ var legajo;
+ var Nacionalidad;
+
+ edad = prompt ("Ingrese su edad");
+
+ edad = parseInt (edad);
+
+ while (isNaN(edad)|| edad <18 ||edad >90 )
+ {
+      edad = prompt ("Ingrese su edad");
+
+      edad = parseInt (edad)
+ }
+document.getElementById ("Edad").value = edad;
  
-}
+ sexo = prompt ("Ingrese F para Femenino o M para Masculino");
+
+ sexo = parseInt (sexo);
+
+ if (isNaN(sexo == 'F'|| sexo =='M'))
+ {
+ document.getElementById ("Sexo").value = sexo;
+  } 
+  else (sexo != 'F'|| sexo != 'M')
+  
+  prompt ("Indique Femenino con F o Masculino con M");
+ 
+ estado = prompt("Indique si esta soltero/a con 1, si esta casado/a con 2, si esta separado/a con 3 o si es viudo/a con 4");
+ 
+ estado = parseInt (estado);
+ 
+ switch (estado)
+ {
+     case "soltero/a": document.getElementById ("EstadoCivil").value = estado;
+
+     case "casado/a": document.getElementById ("EstadoCivil").value = estado;
+
+     case "separado/a": document.getElementById ("EstadoCivil").value = estado;
+
+     case "viudo/a": document.getElementById ("EstadoCivil").value = estado;
+
+ }
+ }
+ 
